@@ -138,7 +138,7 @@ export default function StatsSection() {
           zIndex: 15, height: "7vh",
           background: "linear-gradient(to top, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.35) 60%, rgba(10,10,10,0) 100%)",
         }} />
-        <div className="absolute inset-y-0 left-0 pointer-events-none" style={{
+        <div className="mob-stats-grad absolute inset-y-0 left-0 pointer-events-none" style={{
           zIndex: 5, width: "52%",
           background: "linear-gradient(to right, rgba(10,10,10,0.80) 0%, rgba(10,10,10,0.52) 60%, rgba(10,10,10,0) 100%)",
         }} />

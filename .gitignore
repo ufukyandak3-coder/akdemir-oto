@@ -9,3 +9,14 @@ npm-debug.log*
 next-env.d.ts
 /.vercel
 *.tsbuildinfo
+
+# Kullanılmayan / test dosyaları — git'e alınmıyor
+/public/video/araba-video/
+/public/video/araba-video.mp4
+/public/video/araba-video.zip
+/public/images/ornek-hero.png
+/public/images/jant-peugeot.png
+/public/images/jant-citroen.png
+/public/images/jant-opel.png
+/public/images/yeni-deneme.png
+/public/models/part.glb

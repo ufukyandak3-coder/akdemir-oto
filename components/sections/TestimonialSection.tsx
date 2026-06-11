@@ -185,17 +185,6 @@ export default function TestimonialSection() {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-10">
         <div className="max-w-2xl">
           {/* Section tag */}
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.65, ease: "easeOut" }}
-          >
-            <span className="text-[#e11d48] text-xs font-mono font-bold tracking-[0.25em] uppercase mb-3 inline-block">
-              MÜŞTERİ YORUMLARI
-            </span>
-          </motion.div>
-
           {/* Metallic gradient başlık */}
           <motion.div
             initial={{ opacity: 0, y: 28 }}

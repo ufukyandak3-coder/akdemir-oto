@@ -115,23 +115,6 @@ export function LocationMap({
               <line x1="15" x2="15" y1="6" y2="21" />
             </motion.svg>
 
-            {/* Açık badge */}
-            <motion.div
-              className="flex items-center gap-1.5 px-2.5 py-1 rounded-full"
-              style={{ background: "rgba(10,10,10,0.55)", backdropFilter: "blur(8px)", border: "1px solid rgba(255,255,255,0.10)" }}
-              animate={{ scale: isHovered ? 1.05 : 1 }}
-              transition={{ duration: 0.2 }}
-            >
-              <motion.div
-                className="w-1.5 h-1.5 rounded-full bg-[#ff3b30]"
-                animate={{ opacity: [1, 0.4, 1] }}
-                transition={{ duration: 1.8, repeat: Infinity }}
-              />
-              <span className="font-clash text-[10px] uppercase tracking-[0.18em]"
-                style={{ color: "rgba(253,251,247,0.55)" }}>
-                Açık
-              </span>
-            </motion.div>
           </div>
 
           {/* Alt satır */}

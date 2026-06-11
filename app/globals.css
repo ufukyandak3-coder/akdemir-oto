@@ -99,26 +99,28 @@ body::-webkit-scrollbar {
 @media (max-width: 767px) {
   .mob-brand-text {
     width: clamp(240px, 78vw, 300px) !important;
-    transform: translate(0, 0) !important;
-    background: rgba(10,10,10,0.72) !important;
-    backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important;
-    border-radius: 14px !important;
+    transform: translate(0, -10vh) !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-radius: 0 !important;
     padding: 1rem 1.2rem !important;
   }
   .mob-brand-text h2 {
-    font-size: clamp(1.6rem, 6.5vw, 2rem) !important;
+    font-size: clamp(1.05rem, 4.4vw, 1.42rem) !important;
     line-height: 0.9 !important;
   }
   .mob-brand-wheel {
-    width: 72vw !important;
-    left: -48vw !important;
-    opacity: 0.45 !important;
+    width: 88vw !important;
+    left: -18vw !important;
+    top: 25% !important;
+    opacity: 0.70 !important;
   }
   .mob-brand-capsule {
-    width: 68vw !important;
-    right: -46vw !important;
-    opacity: 0.45 !important;
+    width: 90vw !important;
+    right: 2vw !important;
+    top: 84% !important;
+    opacity: 0.70 !important;
   }
   .mob-brand-label span {
     font-size: 10px !important;
@@ -128,41 +130,72 @@ body::-webkit-scrollbar {
 @media (min-width: 768px) and (max-width: 1023px) {
   .mob-brand-text {
     width: clamp(260px, 32vw, 320px) !important;
-    transform: translate(-5vw, -5vh) !important;
+    transform: translate(7vw, -10vh) !important;
   }
   .mob-brand-wheel {
-    width: 68vw !important;
+    width: 76vw !important;
+    top: 72% !important;
   }
   .mob-brand-capsule {
-    width: 64vw !important;
+    width: 72vw !important;
+    top: 26% !important;
+    right: 0 !important;
   }
+}
+
+/* ── MacroSection: sol overlay (sadece mobil) ── */
+.mob-macro-left-grad {
+  display: none;
 }
 
 /* ── MacroSection: sağ gradient + SVG gizle, node'ları sola taşı ── */
 @media (max-width: 767px) {
+  /* Sol overlay kapalı, sağ overlay açık (yazılar sağda okunaklı olsun) */
+  .mob-macro-left-grad {
+    display: none !important;
+  }
   .mob-macro-right-grad {
-    display: none !important;
+    display: block !important;
+    width: 72% !important;
+    background: linear-gradient(to left, rgba(10,10,10,0.97) 0%, rgba(10,10,10,0.84) 42%, rgba(10,10,10,0.42) 72%, rgba(10,10,10,0) 100%) !important;
   }
+  /* Masaüstündeki gibi görselden çizgilerle bağlı node'lar — SVG açık */
   .mob-macro-svg {
-    display: none !important;
+    display: block !important;
   }
+  /* Node'lar sağda, çerçevesiz (masaüstü tarzı, sadece sol kenar çizgisi) */
   .mob-macro-node {
-    width: min(200px, 50vw) !important;
+    width: min(195px, 50vw) !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-radius: 0 !important;
   }
+  .mob-macro-h {
+    font-size: clamp(1.3rem, 5vw, 1.85rem) !important;
+  }
+  /* 01 OEM Kalite — üst orta */
   .mob-macro-node-0 {
-    top: 14% !important;
-    left: 4% !important;
-    right: auto !important;
+    top: 7% !important;
+    right: 25% !important;
+    left: auto !important;
   }
+  /* 02 Lojistik — sağ alt */
   .mob-macro-node-1 {
-    top: 42% !important;
-    left: 4% !important;
+    top: auto !important;
+    bottom: 16% !important;
+    right: 3% !important;
+    left: auto !important;
+  }
+  /* 03 Uyumluluk — sol alt */
+  .mob-macro-node-2 {
+    top: auto !important;
+    bottom: 7% !important;
+    left: 3% !important;
     right: auto !important;
   }
-  .mob-macro-node-2 {
-    top: 68% !important;
-    left: 4% !important;
-    right: auto !important;
+  .mob-macro-video {
+    object-position: 35% center !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -179,6 +212,16 @@ body::-webkit-scrollbar {
   .mob-stats-cards {
     padding-left: 0.5rem !important;
   }
+  /* Yazıların arkası koyu (okunaklı), sağda araba görünür kalır */
+  .mob-stats-grad {
+    width: 100% !important;
+    background: linear-gradient(to right,
+      rgba(10,10,10,0.96) 0%,
+      rgba(10,10,10,0.90) 46%,
+      rgba(10,10,10,0.66) 72%,
+      rgba(10,10,10,0.20) 90%,
+      rgba(10,10,10,0) 100%) !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .mob-stats-col {
@@ -186,6 +229,16 @@ body::-webkit-scrollbar {
   }
   .mob-stats-cards {
     padding-left: 2rem !important;
+  }
+  /* Yazıların arkası koyu (okunaklı), sağda araba görünür kalır — tablet */
+  .mob-stats-grad {
+    width: 90% !important;
+    background: linear-gradient(to right,
+      rgba(10,10,10,0.97) 0%,
+      rgba(10,10,10,0.92) 55%,
+      rgba(10,10,10,0.72) 75%,
+      rgba(10,10,10,0.20) 92%,
+      rgba(10,10,10,0) 100%) !important;
   }
 }
 
