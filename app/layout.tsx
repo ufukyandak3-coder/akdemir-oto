@@ -42,6 +42,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: "35HlC3Gqfkl0TAANws3x8Ryt8DbMp8-gG3kie3dlun8",
+  },
   openGraph: {
     title: "Akdemir Oto Yedek Parça — Adana Seyhan",
     description: "Peugeot · Citroën · Opel — orijinal ve premium yedek parça.",
