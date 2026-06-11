@@ -57,7 +57,7 @@ export function LocationMap({
       onClick={handleClick}
     >
       <motion.div
-        className="relative overflow-hidden rounded-2xl"
+        className="mob-map-card relative overflow-hidden rounded-2xl"
         style={{
           rotateX: springRotateX,
           rotateY: springRotateY,

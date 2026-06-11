@@ -162,7 +162,7 @@ export default function MacroSection() {
         ))}
       </svg>
 
-      <div ref={el => { nodeRefs.current[0] = el; }} className="absolute"
+      <div ref={el => { nodeRefs.current[0] = el; }} className="mob-macro-node absolute"
         style={{ ...NODE_STYLE[0], zIndex: 10, width: "min(290px, 27vw)", borderLeft: "1px solid rgba(225,29,72,0.3)", paddingLeft: "clamp(12px, 1.2vw, 18px)", filter: "drop-shadow(0px 0px 20px rgba(255,255,255,0.05))" }}>
         <span className="font-clash block mb-2" style={{ fontSize: "10px", letterSpacing: "0.32em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>
           01 — OEM Kalite
@@ -175,7 +175,7 @@ export default function MacroSection() {
         </p>
       </div>
 
-      <div ref={el => { nodeRefs.current[1] = el; }} className="absolute"
+      <div ref={el => { nodeRefs.current[1] = el; }} className="mob-macro-node absolute"
         style={{ ...NODE_STYLE[1], zIndex: 10, width: "min(310px, 29vw)", borderLeft: "1.5px solid rgba(225,29,72,0.5)", paddingLeft: "clamp(12px, 1.2vw, 18px)", filter: "drop-shadow(0px 0px 20px rgba(255,255,255,0.05))" }}>
         <span className="font-clash block mb-2" style={{ fontSize: "10px", letterSpacing: "0.32em", textTransform: "uppercase", color: "rgba(225,29,72,0.85)" }}>
           02 — Lojistik
@@ -189,7 +189,7 @@ export default function MacroSection() {
         </p>
       </div>
 
-      <div ref={el => { nodeRefs.current[2] = el; }} className="absolute"
+      <div ref={el => { nodeRefs.current[2] = el; }} className="mob-macro-node absolute"
         style={{ ...NODE_STYLE[2], zIndex: 10, width: "min(270px, 25vw)", borderLeft: "1px solid rgba(225,29,72,0.3)", paddingLeft: "clamp(12px, 1.2vw, 18px)", filter: "drop-shadow(0px 0px 20px rgba(255,255,255,0.05))" }}>
         <span className="font-clash block mb-2" style={{ fontSize: "10px", letterSpacing: "0.32em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>
           03 — Uyumluluk

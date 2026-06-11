@@ -131,7 +131,7 @@ export default function BrandFocusSection() {
         />
 
         {/* Section label */}
-        <div ref={labelRef} className="absolute top-14 left-6 md:left-12 z-20">
+        <div ref={labelRef} className="mob-brand-label absolute top-14 left-6 md:left-12 z-20">
           <span
             className="font-clash font-black uppercase tracking-[0.20em]"
             style={{
@@ -152,7 +152,7 @@ export default function BrandFocusSection() {
           <div
             key={`wheel-${brand.id}`}
             ref={(el) => { wheelRefs.current[i] = el; }}
-            className="absolute top-1/2 -translate-y-1/2 pointer-events-none z-10"
+            className="mob-brand-wheel absolute top-1/2 -translate-y-1/2 pointer-events-none z-10"
             style={{ left: "-22vw", width: "62vw", willChange: "transform" }}
           >
             <Image
@@ -173,7 +173,7 @@ export default function BrandFocusSection() {
           <div
             key={`capsule-${brand.id}`}
             ref={(el) => { capsuleRefs.current[i] = el; }}
-            className="absolute top-1/2 -translate-y-1/2 pointer-events-none z-10"
+            className="mob-brand-capsule absolute top-1/2 -translate-y-1/2 pointer-events-none z-10"
             style={{ right: "-5vw", width: "58vw", willChange: "transform" }}
           >
             <Image
@@ -191,7 +191,7 @@ export default function BrandFocusSection() {
 
         {/* Metinler — orta */}
         <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-          <div className="relative" style={{ width: "clamp(220px, 18vw, 320px)", transform: "translate(-13vw, -7vh)" }}>
+          <div className="mob-brand-text relative" style={{ width: "clamp(220px, 18vw, 320px)", transform: "translate(-13vw, -7vh)" }}>
             {brands.map((brand, i) => (
               <div
                 key={brand.id}

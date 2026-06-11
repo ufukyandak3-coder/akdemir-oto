@@ -145,7 +145,7 @@ export default function StatsSection() {
 
         <div
           ref={leftColRef}
-          className="absolute inset-y-0 left-0 flex flex-col justify-between"
+          className="mob-stats-col absolute inset-y-0 left-0 flex flex-col justify-between"
           style={{
             zIndex: 10,
             width: "45vw",
@@ -203,7 +203,7 @@ export default function StatsSection() {
           </div>
 
           {/* Alt görsel kartlar */}
-          <div className="flex gap-3" data-anim style={{ marginBottom: "clamp(16px, 2.5vh, 32px)", paddingLeft: "clamp(56px, 6vw, 7rem)" }}>
+          <div className="mob-stats-cards flex gap-3" data-anim style={{ marginBottom: "clamp(16px, 2.5vh, 32px)", paddingLeft: "clamp(56px, 6vw, 7rem)" }}>
             {IMAGE_CARDS.map((card) => (
               <div
                 key={card.src}

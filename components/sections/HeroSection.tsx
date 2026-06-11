@@ -77,7 +77,7 @@ export default function HeroSection() {
       />
 
       {/* Tipografi — CSS animasyonu, JS'e bağımlı değil */}
-      <div className="absolute left-0 top-1/2 -translate-y-[38%] w-[48vw] text-left pl-8 md:pl-24 z-10">
+      <div className="mob-hero-text absolute left-0 top-1/2 -translate-y-[38%] w-[48vw] text-left pl-8 md:pl-24 z-10">
 
         {/* Konum */}
         <div className="hero-eyebrow" style={{ marginBottom: "8rem", marginTop: "-8rem" }}>
@@ -142,7 +142,7 @@ export default function HeroSection() {
 
         {/* Paragraf */}
         <p
-          className="hero-para font-clash"
+          className="hero-para mob-hero-nowrap font-clash"
           style={{
             fontSize: "clamp(15px, 1.35vw, 18px)",
             lineHeight: 2,
@@ -171,7 +171,7 @@ export default function HeroSection() {
 
       {/* Üst navigasyon — fixed, sol üst */}
       <div
-        className="fixed top-6 left-16 md:left-24 z-50"
+        className="mob-nav-wrap fixed top-6 left-16 md:left-24 z-50"
         style={{ pointerEvents: "auto" }}
       >
         <NavHeader />

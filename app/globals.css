@@ -60,3 +60,110 @@ body::-webkit-scrollbar {
 .hero-para {
   animation: heroFadeUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.95s both;
 }
+
+/* ================================================================
+   RESPONSIVE — TABLET (768-1023px) + MOBİL (≤767px)
+   Masaüstü (≥1024px) hiç etkilenmez.
+   ================================================================ */
+
+/* ── Nav wrapper ── */
+@media (max-width: 1023px) {
+  .mob-nav-wrap {
+    left: 0.5rem !important;
+  }
+  .mob-nav-wrap li {
+    padding: 5px 5px !important;
+  }
+}
+
+/* ── Hero metin kutusu ── */
+@media (max-width: 767px) {
+  .mob-hero-text {
+    width: 88vw !important;
+    padding-left: 1.25rem !important;
+  }
+  .mob-hero-nowrap {
+    white-space: normal !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mob-hero-text {
+    width: 72vw !important;
+  }
+}
+
+/* ── BrandFocus metin + görseller ── */
+@media (max-width: 767px) {
+  .mob-brand-text {
+    width: clamp(260px, 82vw, 320px) !important;
+    transform: translate(2vw, -3vh) !important;
+  }
+  .mob-brand-wheel {
+    width: 90vw !important;
+    left: -32vw !important;
+  }
+  .mob-brand-capsule {
+    width: 80vw !important;
+    right: -22vw !important;
+  }
+  .mob-brand-label span {
+    font-size: 10px !important;
+    letter-spacing: 0.10em !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mob-brand-text {
+    width: clamp(260px, 32vw, 320px) !important;
+    transform: translate(-5vw, -5vh) !important;
+  }
+  .mob-brand-wheel {
+    width: 68vw !important;
+  }
+  .mob-brand-capsule {
+    width: 64vw !important;
+  }
+}
+
+/* ── MacroSection teknik notlar ── */
+@media (max-width: 767px) {
+  .mob-macro-node {
+    width: min(185px, 46vw) !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mob-macro-node {
+    width: min(250px, 33vw) !important;
+  }
+}
+
+/* ── StatsSection sol kolon ── */
+@media (max-width: 767px) {
+  .mob-stats-col {
+    width: 92vw !important;
+  }
+  .mob-stats-cards {
+    padding-left: 1rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mob-stats-col {
+    width: 62vw !important;
+  }
+  .mob-stats-cards {
+    padding-left: 2rem !important;
+  }
+}
+
+/* ── LocationMap harita kartı ── */
+@media (max-width: 767px) {
+  .mob-map-card {
+    width: 88vw !important;
+    height: 260px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mob-map-card {
+    width: 460px !important;
+    height: 340px !important;
+  }
+}
