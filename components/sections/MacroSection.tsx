@@ -131,13 +131,13 @@ export default function MacroSection() {
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 1, background: "radial-gradient(ellipse at 32% 50%, rgba(10,10,10,0.0) 0%, rgba(10,10,10,0.50) 100%)" }} />
       <div className="absolute top-0 inset-x-0 pointer-events-none" style={{ zIndex: 2, height: "28%", background: "linear-gradient(to bottom, rgba(10,10,10,1) 0%, rgba(10,10,10,0.6) 55%, rgba(10,10,10,0) 100%)" }} />
       <div className="absolute bottom-0 inset-x-0 pointer-events-none" style={{ zIndex: 2, height: "28%", background: "linear-gradient(to top, rgba(10,10,10,1) 0%, rgba(10,10,10,0.6) 55%, rgba(10,10,10,0) 100%)" }} />
-      <div className="absolute inset-y-0 right-0 pointer-events-none" style={{ zIndex: 3, width: "52%", background: "linear-gradient(to left, rgba(10,10,10,0.90) 0%, rgba(10,10,10,0.55) 55%, rgba(10,10,10,0) 100%)" }} />
+      <div className="mob-macro-right-grad absolute inset-y-0 right-0 pointer-events-none" style={{ zIndex: 3, width: "52%", background: "linear-gradient(to left, rgba(10,10,10,0.90) 0%, rgba(10,10,10,0.55) 55%, rgba(10,10,10,0) 100%)" }} />
 
       <div className="absolute pointer-events-none" style={{ zIndex: 20, top: "2rem", left: "clamp(1.5rem, 3vw, 3rem)" }}>
         <span className="font-clash text-[9px] uppercase tracking-[0.32em] text-white/20">03 — Mühendislik</span>
       </div>
 
-      <svg className="absolute inset-0 pointer-events-none" width="100%" height="100%" style={{ zIndex: 6, overflow: "visible" }} aria-hidden>
+      <svg className="mob-macro-svg absolute inset-0 pointer-events-none" width="100%" height="100%" style={{ zIndex: 6, overflow: "visible" }} aria-hidden>
         {[0, 1, 2].map(i => (
           <circle key={`ring-${i}`} ref={el => { ringRefs.current[i] = el; }}
             cx={-200} cy={-200} r={13}
@@ -162,7 +162,7 @@ export default function MacroSection() {
         ))}
       </svg>
 
-      <div ref={el => { nodeRefs.current[0] = el; }} className="mob-macro-node absolute"
+      <div ref={el => { nodeRefs.current[0] = el; }} className="mob-macro-node mob-macro-node-0 absolute"
         style={{ ...NODE_STYLE[0], zIndex: 10, width: "min(290px, 27vw)", borderLeft: "1px solid rgba(225,29,72,0.3)", paddingLeft: "clamp(12px, 1.2vw, 18px)", filter: "drop-shadow(0px 0px 20px rgba(255,255,255,0.05))" }}>
         <span className="font-clash block mb-2" style={{ fontSize: "10px", letterSpacing: "0.32em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>
           01 — OEM Kalite
@@ -175,7 +175,7 @@ export default function MacroSection() {
         </p>
       </div>
 
-      <div ref={el => { nodeRefs.current[1] = el; }} className="mob-macro-node absolute"
+      <div ref={el => { nodeRefs.current[1] = el; }} className="mob-macro-node mob-macro-node-1 absolute"
         style={{ ...NODE_STYLE[1], zIndex: 10, width: "min(310px, 29vw)", borderLeft: "1.5px solid rgba(225,29,72,0.5)", paddingLeft: "clamp(12px, 1.2vw, 18px)", filter: "drop-shadow(0px 0px 20px rgba(255,255,255,0.05))" }}>
         <span className="font-clash block mb-2" style={{ fontSize: "10px", letterSpacing: "0.32em", textTransform: "uppercase", color: "rgba(225,29,72,0.85)" }}>
           02 — Lojistik
@@ -189,7 +189,7 @@ export default function MacroSection() {
         </p>
       </div>
 
-      <div ref={el => { nodeRefs.current[2] = el; }} className="mob-macro-node absolute"
+      <div ref={el => { nodeRefs.current[2] = el; }} className="mob-macro-node mob-macro-node-2 absolute"
         style={{ ...NODE_STYLE[2], zIndex: 10, width: "min(270px, 25vw)", borderLeft: "1px solid rgba(225,29,72,0.3)", paddingLeft: "clamp(12px, 1.2vw, 18px)", filter: "drop-shadow(0px 0px 20px rgba(255,255,255,0.05))" }}>
         <span className="font-clash block mb-2" style={{ fontSize: "10px", letterSpacing: "0.32em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>
           03 — Uyumluluk

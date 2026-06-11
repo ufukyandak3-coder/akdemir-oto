@@ -76,7 +76,7 @@ body::-webkit-scrollbar {
   }
 }
 
-/* ── Hero metin kutusu ── */
+/* ── Hero: metin kutusu + gradient hafiflet ── */
 @media (max-width: 767px) {
   .mob-hero-text {
     width: 88vw !important;
@@ -85,6 +85,9 @@ body::-webkit-scrollbar {
   .mob-hero-nowrap {
     white-space: normal !important;
   }
+  .mob-hero-gradient {
+    background: linear-gradient(to right, rgba(0,0,0,0.60) 0%, rgba(0,0,0,0.20) 60%, rgba(0,0,0,0.0) 100%) !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .mob-hero-text {
@@ -92,19 +95,30 @@ body::-webkit-scrollbar {
   }
 }
 
-/* ── BrandFocus metin + görseller ── */
+/* ── BrandFocus: metin arka plan + görselleri kenarlara it ── */
 @media (max-width: 767px) {
   .mob-brand-text {
-    width: clamp(260px, 82vw, 320px) !important;
-    transform: translate(2vw, -3vh) !important;
+    width: clamp(240px, 78vw, 300px) !important;
+    transform: translate(0, 0) !important;
+    background: rgba(10,10,10,0.72) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border-radius: 14px !important;
+    padding: 1rem 1.2rem !important;
+  }
+  .mob-brand-text h2 {
+    font-size: clamp(1.6rem, 6.5vw, 2rem) !important;
+    line-height: 0.9 !important;
   }
   .mob-brand-wheel {
-    width: 90vw !important;
-    left: -32vw !important;
+    width: 72vw !important;
+    left: -48vw !important;
+    opacity: 0.45 !important;
   }
   .mob-brand-capsule {
-    width: 80vw !important;
-    right: -22vw !important;
+    width: 68vw !important;
+    right: -46vw !important;
+    opacity: 0.45 !important;
   }
   .mob-brand-label span {
     font-size: 10px !important;
@@ -124,10 +138,31 @@ body::-webkit-scrollbar {
   }
 }
 
-/* ── MacroSection teknik notlar ── */
+/* ── MacroSection: sağ gradient + SVG gizle, node'ları sola taşı ── */
 @media (max-width: 767px) {
+  .mob-macro-right-grad {
+    display: none !important;
+  }
+  .mob-macro-svg {
+    display: none !important;
+  }
   .mob-macro-node {
-    width: min(185px, 46vw) !important;
+    width: min(200px, 50vw) !important;
+  }
+  .mob-macro-node-0 {
+    top: 14% !important;
+    left: 4% !important;
+    right: auto !important;
+  }
+  .mob-macro-node-1 {
+    top: 42% !important;
+    left: 4% !important;
+    right: auto !important;
+  }
+  .mob-macro-node-2 {
+    top: 68% !important;
+    left: 4% !important;
+    right: auto !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -136,13 +171,13 @@ body::-webkit-scrollbar {
   }
 }
 
-/* ── StatsSection sol kolon ── */
+/* ── StatsSection: kolon daralt → canvas sağda görünsün ── */
 @media (max-width: 767px) {
   .mob-stats-col {
-    width: 92vw !important;
+    width: 80vw !important;
   }
   .mob-stats-cards {
-    padding-left: 1rem !important;
+    padding-left: 0.5rem !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {

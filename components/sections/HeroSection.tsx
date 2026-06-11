@@ -59,7 +59,7 @@ export default function HeroSection() {
 
       {/* Sol gradient */}
       <div
-        className="absolute inset-0"
+        className="mob-hero-gradient absolute inset-0"
         style={{
           zIndex: 1,
           background: "linear-gradient(to right, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 55%, rgba(0,0,0,0.0) 100%)",
