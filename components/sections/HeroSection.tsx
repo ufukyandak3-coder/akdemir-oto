@@ -49,7 +49,6 @@ export default function HeroSection() {
         className="absolute inset-0 h-full w-full object-cover object-center"
         style={{ zIndex: 0 }}
         src="/video/hero-video.mp4"
-        poster="/video/hero-poster.png"
         preload="auto"
         muted
         playsInline

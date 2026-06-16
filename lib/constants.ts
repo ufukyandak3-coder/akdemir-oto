@@ -24,7 +24,6 @@ export const COLORS = {
 
 // --- Hero video slotları ---
 export const HERO_VIDEO_PATH = "/video/hero-video.mp4";
-export const HERO_POSTER_PATH = "/video/hero-poster.jpg";
 
 // --- İstatistikler ---
 export const STATS = [

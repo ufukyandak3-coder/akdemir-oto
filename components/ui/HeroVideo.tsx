@@ -5,7 +5,7 @@
 // loop YOK: video bitince 10 saniye son kareyi tutar, sonra başa sarıp yeniden oynar.
 
 import { useEffect, useRef, useState } from "react";
-import { HERO_POSTER_PATH, HERO_VIDEO_PATH } from "@/lib/constants";
+import { HERO_VIDEO_PATH } from "@/lib/constants";
 
 export default function HeroVideo({
   sentinelRef,
@@ -63,7 +63,6 @@ export default function HeroVideo({
     <video
       ref={videoRef}
       className="absolute inset-0 h-full w-full object-cover"
-      poster={HERO_POSTER_PATH}
       preload="metadata"
       muted
       playsInline
