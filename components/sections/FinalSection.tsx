@@ -185,7 +185,15 @@ export default function FinalSection() {
               style={{ color: "rgba(28,21,16,0.28)" }}
               {...fade(1.95, v)}
             >
-              © {new Date().getFullYear()} Akdemir Oto Yedek Parça
+              © {new Date().getFullYear()} Akdemir Oto Yedek Parça &nbsp;·&nbsp; Designed &amp; developed by{" "}
+              <a
+                href="https://www.valthusagency.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "rgba(28,21,16,0.45)", textDecoration: "underline", textUnderlineOffset: "3px" }}
+              >
+                Valthus Agency
+              </a>
             </motion.p>
           </div>
 
